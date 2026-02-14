@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Build arg: backend API URL (injected at build time)
-ARG VITE_API_URL=http://localhost:8000/api
+ARG VITE_API_URL
 ENV VITE_API_URL=${VITE_API_URL}
 
 RUN npm run build

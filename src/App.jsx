@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Play, Search, Maximize2, Music, Sparkles, Heart, Radio, Zap } from 'lucide-react';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL;
 
 // Generate a session ID that persists per browser tab
 const SESSION_ID = 'session_' + Math.random().toString(36).substring(2, 10);
