@@ -2,8 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Play, Search, Maximize2, Music, Sparkles, Heart, Radio, Zap } from 'lucide-react';
 
-const API_BASE = import.meta.env.VITE_API_URL;
-console.log("🔗 Connected to Backend:", API_BASE);
+const API_BASE = "https://vibestream-backend.calmbush-580b10ba.centralindia.azurecontainerapps.io/api";
+console.log("🔥 HARDCODED URL ACTIVE:", API_BASE);
 
 // Generate a session ID that persists per browser tab
 const SESSION_ID = 'session_' + Math.random().toString(36).substring(2, 10);
